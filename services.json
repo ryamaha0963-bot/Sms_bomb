@@ -1,0 +1,21 @@
+[
+  {
+    "name": "Hotstar_SMS",
+    "type": "sms",
+    "country": "in",
+    "method": "PUT",
+    "url": "https://api.hotstar.com/um/v3/users/register?register-by=phone_otp",
+    "headers": {"Content-Type": "application/json", "User-Agent": "Mozilla/5.0"},
+    "data_template": "{\"phone_number\":\"{phone}\",\"country_prefix\":\"91\"}"
+  },
+  {
+    "name": "Zomato_SMS",
+    "type": "sms",
+    "country": "in",
+    "method": "POST",
+    "url": "https://www.zomato.com/webroutes/auth/login",
+    "headers": {"Content-Type": "application/json", "User-Agent": "Mozilla/5.0"},
+    "data_template": "{\"country_id\":1,\"phone\":\"{phone}\",\"verification_type\":\"sms\",\"method\":\"phone\"}"
+  }
+  // ... rest of services
+]
